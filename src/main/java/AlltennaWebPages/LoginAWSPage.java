@@ -24,6 +24,7 @@ public class LoginAWSPage extends BaseAlltennaWeb {
     }
     public BasePageLoggedIn auth()  {
 
+        //comment
         loginField.click();
         loginField.sendKeys(LOGIN);
         passwordField.click();
