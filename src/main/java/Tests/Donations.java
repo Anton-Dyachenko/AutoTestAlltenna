@@ -18,32 +18,32 @@ public class Donations extends BaseAlltennaWebTest {
         DonationsPage donationsPage = new DonationsPage();
 
 
-        Assert.assertEquals(true,basePage.loginButton.isDisplayed());
+        Assert.assertTrue(basePage.loginButton.isDisplayed());
         basePage.openLoginPage();
         System.out.println("Step 1: Open the Base page and click Login button");
 
-        Assert.assertEquals(true,loginAWSPage.loginField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.passwordField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isEnabled());
+        Assert.assertTrue(loginAWSPage.loginField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.passwordField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isEnabled());
         loginAWSPage.auth();
         System.out.println("Step 2: fulfill login and password fields, click Sign in button");
 
-        Assert.assertEquals(true,basePageLoggedIn.avatar.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.avatar.isDisplayed());
         basePageLoggedIn.avatarDropdownBox();
         System.out.println("Step 3: dropdown box is opened");
 
-        Assert.assertEquals(true,basePageLoggedIn.donateButtonDropbox.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.donateButtonDropbox.isDisplayed());
         basePageLoggedIn.goToDonatePage();
         System.out.println("Step 4: donate page is opened");
 
-        Assert.assertEquals(true,donationsPage.ourFansButton.isDisplayed());
+        Assert.assertTrue(donationsPage.ourFansButton.isDisplayed());
         donationsPage.oneTimeButtonClick();
         System.out.println("Step 5: Click Donate at Our Fans");
 
-        Assert.assertEquals(true,donationsPage.payPalButton.isDisplayed());
-        Assert.assertEquals(true,donationsPage.stripeButton.isDisplayed());
-        Assert.assertEquals(true,donationsPage.cancelOnetimeDonateButton.isDisplayed());
+        Assert.assertTrue(donationsPage.payPalButton.isDisplayed());
+        Assert.assertTrue(donationsPage.stripeButton.isDisplayed());
+        Assert.assertTrue(donationsPage.cancelOnetimeDonateButton.isDisplayed());
         donationsPage.onetimeDonatePayPal();
         System.out.println("Step 6: Choose type of donation by PayPal");
 
@@ -58,32 +58,32 @@ public class Donations extends BaseAlltennaWebTest {
         BasePageLoggedIn basePageLoggedIn = new BasePageLoggedIn();
         DonationsPage donationsPage = new DonationsPage();
 
-        Assert.assertEquals(true,basePage.loginButton.isDisplayed());
+        Assert.assertTrue(basePage.loginButton.isDisplayed());
         basePage.openLoginPage();
         System.out.println("Step 1: Open the Base page and click Login button");
 
-        Assert.assertEquals(true,loginAWSPage.loginField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.passwordField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isEnabled());
+        Assert.assertTrue(loginAWSPage.loginField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.passwordField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isEnabled());
         loginAWSPage.auth();
         System.out.println("Step 2: fulfill login and password fields, click Sign in button");
 
-        Assert.assertEquals(true,basePageLoggedIn.avatar.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.avatar.isDisplayed());
         basePageLoggedIn.avatarDropdownBox();
         System.out.println("Step 3: dropdown box is opened");
 
-        Assert.assertEquals(true,basePageLoggedIn.donateButtonDropbox.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.donateButtonDropbox.isDisplayed());
         basePageLoggedIn.goToDonatePage();
         System.out.println("Step 4: donate page is opened");
 
-        Assert.assertEquals(true,donationsPage.ourFansButton.isDisplayed());
+        Assert.assertTrue(donationsPage.ourFansButton.isDisplayed());
         donationsPage.oneTimeButtonClick();
         System.out.println("Step 5: Click Donate at Our Fans");
 
-        Assert.assertEquals(true,donationsPage.payPalButton.isDisplayed());
-        Assert.assertEquals(true,donationsPage.stripeButton.isDisplayed());
-        Assert.assertEquals(true,donationsPage.cancelOnetimeDonateButton.isDisplayed());
+        Assert.assertTrue(donationsPage.payPalButton.isDisplayed());
+        Assert.assertTrue(donationsPage.stripeButton.isDisplayed());
+        Assert.assertTrue(donationsPage.cancelOnetimeDonateButton.isDisplayed());
         donationsPage.onetimeDonateStripe();
         System.out.println("Step 6: Choose type of donation by Stripe");
 
@@ -98,34 +98,34 @@ public class Donations extends BaseAlltennaWebTest {
         BasePageLoggedIn basePageLoggedIn = new BasePageLoggedIn();
         DonationsPage donationsPage = new DonationsPage();
 
-        Assert.assertEquals(true,basePage.loginButton.isDisplayed());
+        Assert.assertTrue(basePage.loginButton.isDisplayed());
         basePage.openLoginPage();
         System.out.println("Step 1: Open the Base page and click Login button");
 
-        Assert.assertEquals(true,loginAWSPage.loginField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.passwordField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isEnabled());
+        Assert.assertTrue(loginAWSPage.loginField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.passwordField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isEnabled());
         loginAWSPage.auth();
         System.out.println("Step 2: fulfill login and password fields, click Sign in button");
 
-        Assert.assertEquals(true,basePageLoggedIn.avatar.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.avatar.isDisplayed());
         basePageLoggedIn.avatarDropdownBox();
         System.out.println("Step 3: dropdown box is opened");
 
-        Assert.assertEquals(true,basePageLoggedIn.donateButtonDropbox.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.donateButtonDropbox.isDisplayed());
         basePageLoggedIn.goToDonatePage();
         System.out.println("Step 4: donate page is opened");
 
-        Assert.assertEquals(true,donationsPage.ourFansButton.isDisplayed());
+        Assert.assertTrue(donationsPage.ourFansButton.isDisplayed());
         donationsPage.oneTimeButtonClick();
         System.out.println("Step 5: Click Donate at Our Fans");
 
-        Assert.assertEquals(true,donationsPage.payPalButton.isDisplayed());
-        Assert.assertEquals(true,donationsPage.stripeButton.isDisplayed());
-        Assert.assertEquals(true,donationsPage.cancelOnetimeDonateButton.isDisplayed());
+        Assert.assertTrue(donationsPage.payPalButton.isDisplayed());
+        Assert.assertTrue(donationsPage.stripeButton.isDisplayed());
+        Assert.assertTrue(donationsPage.cancelOnetimeDonateButton.isDisplayed());
         donationsPage.onetimeDonateCancel();
-        Assert.assertEquals(true,donationsPage.ourFansButton.isDisplayed());
+        Assert.assertTrue(donationsPage.ourFansButton.isDisplayed());
         System.out.println("Step 6: click Cancel button");
     }
     @Test
@@ -136,26 +136,26 @@ public class Donations extends BaseAlltennaWebTest {
         BasePageLoggedIn basePageLoggedIn = new BasePageLoggedIn();
         DonationsPage donationsPage = new DonationsPage();
 
-        Assert.assertEquals(true,basePage.loginButton.isDisplayed());
+        Assert.assertTrue(basePage.loginButton.isDisplayed());
         basePage.openLoginPage();
         System.out.println("Step 1: Open the Base page and click Login button");
 
-        Assert.assertEquals(true,loginAWSPage.loginField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.passwordField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isEnabled());
+        Assert.assertTrue(loginAWSPage.loginField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.passwordField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isEnabled());
         loginAWSPage.auth();
         System.out.println("Step 2: fulfill login and password fields, click Sign in button");
 
-        Assert.assertEquals(true,basePageLoggedIn.avatar.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.avatar.isDisplayed());
         basePageLoggedIn.avatarDropdownBox();
         System.out.println("Step 3: dropdown box is opened");
 
-        Assert.assertEquals(true,basePageLoggedIn.donateButtonDropbox.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.donateButtonDropbox.isDisplayed());
         basePageLoggedIn.goToDonatePage();
         System.out.println("Step 4: donate page is opened");
 
-        Assert.assertEquals(true,donationsPage.catcherButton.isDisplayed());
+        Assert.assertTrue(donationsPage.catcherButton.isDisplayed());
         donationsPage.catcherJoinButton();
         System.out.println("Step 5: Click Join button at Catcher");
     }
@@ -167,26 +167,26 @@ public class Donations extends BaseAlltennaWebTest {
         BasePageLoggedIn basePageLoggedIn = new BasePageLoggedIn();
         DonationsPage donationsPage = new DonationsPage();
 
-        Assert.assertEquals(true,basePage.loginButton.isDisplayed());
+        Assert.assertTrue(basePage.loginButton.isDisplayed());
         basePage.openLoginPage();
         System.out.println("Step 1: Open the Base page and click Login button");
 
-        Assert.assertEquals(true,loginAWSPage.loginField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.passwordField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isEnabled());
+        Assert.assertTrue(loginAWSPage.loginField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.passwordField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isEnabled());
         loginAWSPage.auth();
         System.out.println("Step 2: fulfill login and password fields, click Sign in button");
 
-        Assert.assertEquals(true,basePageLoggedIn.avatar.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.avatar.isDisplayed());
         basePageLoggedIn.avatarDropdownBox();
         System.out.println("Step 3: dropdown box is opened");
 
-        Assert.assertEquals(true,basePageLoggedIn.donateButtonDropbox.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.donateButtonDropbox.isDisplayed());
         basePageLoggedIn.goToDonatePage();
         System.out.println("Step 4: donate page is opened");
 
-        Assert.assertEquals(true,donationsPage.outfielderButton.isDisplayed());
+        Assert.assertTrue(donationsPage.outfielderButton.isDisplayed());
         donationsPage.outfielderJoinButton();
         System.out.println("Step 5: Click Join button at Outfielder");
     }
@@ -199,26 +199,26 @@ public class Donations extends BaseAlltennaWebTest {
         BasePageLoggedIn basePageLoggedIn = new BasePageLoggedIn();
         DonationsPage donationsPage = new DonationsPage();
 
-        Assert.assertEquals(true,basePage.loginButton.isDisplayed());
+        Assert.assertTrue(basePage.loginButton.isDisplayed());
         basePage.openLoginPage();
         System.out.println("Step 1: Open the Base page and click Login button");
 
-        Assert.assertEquals(true,loginAWSPage.loginField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.passwordField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isEnabled());
+        Assert.assertTrue(loginAWSPage.loginField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.passwordField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isEnabled());
         loginAWSPage.auth();
         System.out.println("Step 2: fulfill login and password fields, click Sign in button");
 
-        Assert.assertEquals(true,basePageLoggedIn.avatar.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.avatar.isDisplayed());
         basePageLoggedIn.avatarDropdownBox();
         System.out.println("Step 3: dropdown box is opened");
 
-        Assert.assertEquals(true,basePageLoggedIn.donateButtonDropbox.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.donateButtonDropbox.isDisplayed());
         basePageLoggedIn.goToDonatePage();
         System.out.println("Step 4: donate page is opened");
 
-        Assert.assertEquals(true,donationsPage.pitcherButton.isDisplayed());
+        Assert.assertTrue(donationsPage.pitcherButton.isDisplayed());
         donationsPage.pitcherJoinButton();
         System.out.println("Step 5: Click Join button at Pitcher");
     }
@@ -230,26 +230,26 @@ public class Donations extends BaseAlltennaWebTest {
         BasePageLoggedIn basePageLoggedIn = new BasePageLoggedIn();
         DonationsPage donationsPage = new DonationsPage();
 
-        Assert.assertEquals(true,basePage.loginButton.isDisplayed());
+        Assert.assertTrue(basePage.loginButton.isDisplayed());
         basePage.openLoginPage();
         System.out.println("Step 1: Open the Base page and click Login button");
 
-        Assert.assertEquals(true,loginAWSPage.loginField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.passwordField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isEnabled());
+        Assert.assertTrue(loginAWSPage.loginField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.passwordField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isEnabled());
         loginAWSPage.auth();
         System.out.println("Step 2: fulfill login and password fields, click Sign in button");
 
-        Assert.assertEquals(true,basePageLoggedIn.avatar.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.avatar.isDisplayed());
         basePageLoggedIn.avatarDropdownBox();
         System.out.println("Step 3: dropdown box is opened");
 
-        Assert.assertEquals(true,basePageLoggedIn.donateButtonDropbox.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.donateButtonDropbox.isDisplayed());
         basePageLoggedIn.goToDonatePage();
         System.out.println("Step 4: donate page is opened");
 
-        Assert.assertEquals(true,donationsPage.batterButton.isDisplayed());
+        Assert.assertTrue(donationsPage.batterButton.isDisplayed());
         donationsPage.batterJoinButton();
         System.out.println("Step 5: Click Join button at Batter");
     }
@@ -261,26 +261,26 @@ public class Donations extends BaseAlltennaWebTest {
         BasePageLoggedIn basePageLoggedIn = new BasePageLoggedIn();
         DonationsPage donationsPage = new DonationsPage();
 
-        Assert.assertEquals(true,basePage.loginButton.isDisplayed());
+        Assert.assertTrue(basePage.loginButton.isDisplayed());
         basePage.openLoginPage();
         System.out.println("Step 1: Open the Base page and click Login button");
 
-        Assert.assertEquals(true,loginAWSPage.loginField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.passwordField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isEnabled());
+        Assert.assertTrue(loginAWSPage.loginField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.passwordField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isEnabled());
         loginAWSPage.auth();
         System.out.println("Step 2: fulfill login and password fields, click Sign in button");
 
-        Assert.assertEquals(true,basePageLoggedIn.avatar.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.avatar.isDisplayed());
         basePageLoggedIn.avatarDropdownBox();
         System.out.println("Step 3: dropdown box is opened");
 
-        Assert.assertEquals(true,basePageLoggedIn.donateButtonDropbox.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.donateButtonDropbox.isDisplayed());
         basePageLoggedIn.goToDonatePage();
         System.out.println("Step 4: donate page is opened");
 
-        Assert.assertEquals(true,donationsPage.teamManagerButton.isDisplayed());
+        Assert.assertTrue(donationsPage.teamManagerButton.isDisplayed());
         donationsPage.teamManagerJoinButton();
         System.out.println("Step 5: Click Join button at TeamManager");
     }

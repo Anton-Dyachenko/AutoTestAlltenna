@@ -17,15 +17,15 @@ public class LoginLogout extends BaseAlltennaWebTest {
         BasePageLoggedIn basePageLoggedIn = new BasePageLoggedIn();
 
 
-        Assert.assertEquals(true,basePage.loginButton.isDisplayed());
+        Assert.assertTrue(basePage.loginButton.isDisplayed());
         basePage.openLoginPage();
         System.out.println("Step 1: Open the Base page and click Login button");
 
 
-        Assert.assertEquals(true,loginAWSPage.loginField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.passwordField.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isDisplayed());
-        Assert.assertEquals(true,loginAWSPage.signInButton.isEnabled());
+        Assert.assertTrue(loginAWSPage.loginField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.passwordField.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isDisplayed());
+        Assert.assertTrue(loginAWSPage.signInButton.isEnabled());
         loginAWSPage.auth();
         System.out.println("Step 2: fulfill login and password fields, click Sign in button");
 
@@ -33,13 +33,13 @@ public class LoginLogout extends BaseAlltennaWebTest {
         String Expected_Title = "Alltenna.org - stream online";
 
         Assert.assertEquals(Expected_Title,Actual_Title);
-        Assert.assertEquals(false,basePage.check_login_button_is_displayed());
-        Assert.assertEquals(true,basePageLoggedIn.avatar.isDisplayed());
+        Assert.assertFalse(basePage.check_login_button_is_displayed());
+        Assert.assertTrue(basePageLoggedIn.avatar.isDisplayed());
         basePageLoggedIn.avatarDropdownBox();
         System.out.println("Step 3: click the avatar");
 
-        Assert.assertEquals(true,basePageLoggedIn.dropdownBox.isDisplayed());
-        Assert.assertEquals(true,basePageLoggedIn.dropdownBox.isEnabled());
+        Assert.assertTrue(basePageLoggedIn.dropdownBox.isDisplayed());
+        Assert.assertTrue(basePageLoggedIn.dropdownBox.isEnabled());
         basePageLoggedIn.signOut();
         System.out.println("Step 4: click Sign out from dropbox");
         System.out.println("Test 1 passed");
