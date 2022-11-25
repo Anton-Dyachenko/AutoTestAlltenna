@@ -37,21 +37,37 @@ public class DonationsPage extends BaseAlltennaWeb {
     public DonationsPage(){
         PageFactory.initElements(driver,this);
     }
-
     public void oneTimeButtonClick(){
         ourFansButton.click();
     }
-
     public void onetimeDonatePayPal(){
         payPalButton.click();
     }
-
     public void onetimeDonateStripe(){
         stripeButton.click();
     }
-
     public void onetimeDonateCancel(){
         cancelOnetimeDonateButton.click();
+    }
+
+    public void catcherJoinButton(){
+        catcherButton.click();
+    }
+
+    public void outfielderJoinButton(){
+        outfielderButton.click();
+    }
+
+    public void pitcherJoinButton(){
+        pitcherButton.click();
+    }
+
+    public void batterJoinButton(){
+        batterButton.click();
+    }
+
+    public void teamManagerJoinButton(){
+        teamManagerButton.click();
     }
 
 

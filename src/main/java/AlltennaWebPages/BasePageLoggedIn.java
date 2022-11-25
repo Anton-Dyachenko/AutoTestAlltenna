@@ -33,7 +33,7 @@ public class BasePageLoggedIn extends BaseAlltennaWeb {
     public WebElement faqButton;
 
     @FindBy(xpath = "//a[@title='Posts']")
-    public WebElement posts;
+    public WebElement postsButton;
 
     //*Socials*//
 
@@ -70,9 +70,6 @@ public class BasePageLoggedIn extends BaseAlltennaWeb {
     public WebElement signOutButton;
 
 
-
-
-
     public BasePageLoggedIn(){
         PageFactory.initElements(driver,this);
     }
@@ -89,5 +86,5 @@ public class BasePageLoggedIn extends BaseAlltennaWeb {
         return new DonationsPage();
     }
 
-}
 
+}
